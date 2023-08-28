@@ -27,9 +27,9 @@ function App() {
       <h1>Calculatrice</h1>
       <div className="calculator">
         <div className="screen">
-          {expression}
-          <br />
-          {result}
+          <p className="result">{result}</p>
+
+          <p className="expression">{expression}</p>
         </div>
         <div className="buttons">
           <button className="button" onClick={() => handleButtonClick("7")}>
